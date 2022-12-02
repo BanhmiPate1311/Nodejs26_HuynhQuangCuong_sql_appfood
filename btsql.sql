@@ -183,12 +183,3 @@ SELECT 1/COUNT(sub_foods.sub_id) AS trung_binh
 FROM foods 
 INNER JOIN sub_foods 
 ON foods.food_id = sub_foods.food_id;
-
-SELECT *
-FROM restaurants
-INNER JOIN like_res
-ON restaurants.res_id = like_res.res_id;
-
-SET FOREIGN_KEY_CHECKS=0; DROP TABLE like_res; SET FOREIGN_KEY_CHECKS=1;
-ALTER TABLE users AUTO_INCREMENT = 1;
-SELECT * FROM restaurants;
